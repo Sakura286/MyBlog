@@ -1,38 +1,13 @@
 ---
-title: Hello World
+title: Hello-World
+date: 2022-07-30 18:42:32
+tags:
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+就像是装系统一样，建站的事情来来回回也很多次了，不过只是为了体验建站本身如垦荒一样的过程，以及满足自己对未来的博客文章能够硕果累累的想象。但也同装系统一样，逐渐发觉如果只是这样做，如果只是在重复无法进行积累的事情，那么是无法对自己的过去赋予意义的。活着是为了什么呢？
 
-### Create a new post
+我暂且把站点的名字取为“你无法体验苹果本身”，只是因为自己对哲学，尤其是对休谟的一些粗浅的兴趣爱好。我们能感受到苹果的颜色、气味、口感，却无法直接感到苹果本身。那么，我们能感受到“我”吗？我们能感受到的，只有自己正在进行的心理活动——快乐，悲伤，愤怒，抑或无聊，我们无法感到一个没有心理活动的自己。思考这种无聊的问题在以前满足了我的虚荣心，到现在……也不能说没有，但我想我应该逐渐发现这件事本身其实已经足够有趣了。所以我把我认为的这里面最有趣的一个问题设为站点的名字。
 
-``` bash
-$ hexo new "My New Post"
-```
+关于我的 ID ，“ 286 ”已经是很久远的事情了，源自我当时翻得快要背过的小学计算机课本里提到的 80286，我当时认为它很慢（虽然确实很慢），就把这个引申为“小傻瓜”的意思（成年人了要在黑历史前稳住）。“ Sakura ”就已经比较近了，是在大一时读到的《龙族III》里路明非在牛郎店工作时的花名，当时还没有接触日语，错误地把这个读成了带俄语味的`/səˈku:la/`（并觉得很酷！），直到毕业后有数个朋友跟我说“很难想象一个叫樱花的男人”后，发现这个ID已经到处使用没法再改了才追悔莫及，啊，万恶的历史包袱，万恶的兼容。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+基本的介绍就到这里吧，希望这个博客能像自己这几年装系统一样，能活得久一点。
