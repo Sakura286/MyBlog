@@ -4,9 +4,6 @@ date: 2024-04-04 16:27:50
 tags:
 ---
 
-<https://blog.csdn.net/weixin_44979075/article/details/124747355>
-<https://www.aftermath.cn/2023/06/03/aptly-usage/>
-
 ## 目标
 
 手里有几个包，想搭建一个 apt 仓库，对应发行版为 Debian unstable riscv64
