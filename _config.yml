@@ -7,13 +7,13 @@ title: '你无法体验苹果本身'
 subtitle: '人为自然立法'
 description: ''
 keywords:
-author: Sakura286
-language: 'zh-cn'
+author: 'Sakura286'
+language: 'zh-CN'
 timezone:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://github.com/Sakura286
+url: https://sakura286.github.io/
 permalink: :year-:month-:day/:hash/
 permalink_defaults:
 pretty_urls:
