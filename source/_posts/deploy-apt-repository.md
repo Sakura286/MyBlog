@@ -29,7 +29,9 @@ tags:
 
 #### 生成 ASCII 格式的公钥
 
-`gpg --output <key_filename> --armor <your_email>`
+`gpg --output <key_filename> --armor --export <your_email>`
+
+请确保`<your_email>`与生成私钥时所用的邮箱相同
 
 ### 2. 使用 aptly 添加包，并生成仓库的 snapshot
 
@@ -102,3 +104,4 @@ deb <server_path> <distrubution> <component>
 - [aptly搭建本地仓库 - vimer](https://www.aftermath.cn/2023/06/03/aptly-usage/)
 - [动手搭建一个私有的apt服务器 - csdn](https://blog.csdn.net/weixin_44979075/article/details/124747355)
 - [手动自建 APT 仓库步骤 - 趣小组](https://talk.quwj.com/topic/1897)
+- [生成新 GPG 密钥](https://docs.github.com/zh/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
