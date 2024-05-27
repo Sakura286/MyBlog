@@ -23,13 +23,13 @@ tags:
 
 #### 生成签名用的 GPG KEY
 
-运行命令: `gpg --full-gen-key`，按照提示操作。
+运行命令：`gpg --full-gen-key`，按照提示操作。
 
 `~/.gnupg/openpgp-revocs.d/`目录下生成`.rev`的 key 文件
 
 #### 生成 ASCII 格式的公钥
 
-`gpg --output <key_filename> --armor --export <your_email>`
+`gpg --output <key_filename> --export <your_email>`
 
 请确保`<your_email>`与生成私钥时所用的邮箱相同
 
@@ -64,13 +64,13 @@ aptly publish -architectures <arch> snapshot <snapshot_name>
 
 ```bash
 sudo apt-get install nginx -y
-# 在 root /var/www/html； 一行下面添加下面一行
+# 修改 root /var/www/html; 为目标目录
+# 并在添加下面一行
 # autoindex on;
-# 注意保留分号
 sudo vim /etc/nginx/sites-enabled/default
+
 sudo systemctl restart nginx.service
-# 将发布后的 snapshot 仓库移动到服务器目录
-sudo cp -r ~/.aptly/public/ /var/www/html/public
+
 # 别忘了用浏览器访问一下
 # http://<ip_address>/public
 ```
@@ -79,7 +79,7 @@ sudo cp -r ~/.aptly/public/ /var/www/html/public
 
 注意，服务器我们已经搭建好了，接下来的操作在客户端上进行
 
-将前文中的公钥添加至本机配置，**TODO：这种方法已行将废弃，需要找到更行之有效的方法**
+将前文中的公钥添加至本机配置，**TODO：使用 DEB-822 格式，添加**
 
 ```bash
 sudo apt-key add <key_filename>
@@ -101,7 +101,7 @@ deb <server_path> <distrubution> <component>
 
 ## 参考资料
 
-- [aptly搭建本地仓库 - vimer](https://www.aftermath.cn/2023/06/03/aptly-usage/)
-- [动手搭建一个私有的apt服务器 - csdn](https://blog.csdn.net/weixin_44979075/article/details/124747355)
+- [aptly 搭建本地仓库 - vimer](https://www.aftermath.cn/2023/06/03/aptly-usage/)
+- [动手搭建一个私有的 apt 服务器 - csdn](https://blog.csdn.net/weixin_44979075/article/details/124747355)
 - [手动自建 APT 仓库步骤 - 趣小组](https://talk.quwj.com/topic/1897)
-- [生成新 GPG 密钥](https://docs.github.com/zh/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+- [生成新 GPG 密钥 - GitHub](https://docs.github.com/zh/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
