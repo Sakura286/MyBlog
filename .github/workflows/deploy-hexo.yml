@@ -19,9 +19,12 @@ jobs:
             npm install hexo -g
             npm install
             hexo --version
+        - name: Set Git Config
+          run: |
+            git config --global user.email "sakura286@outlook.com"
+            git config --global user.name "Sakura286"
         - name: Generate & Deploy
           run: |
-            ls
             hexo generate
             hexo deploy
         - run: echo 'Successfully Deployed.'
