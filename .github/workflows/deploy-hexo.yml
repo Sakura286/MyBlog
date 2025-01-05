@@ -9,11 +9,15 @@ jobs:
         - name: Get Node.js
           uses: actions/setup-node@v4
         - name: Get Hexo
-          run: npm install hexo
+          run: |
+            npm install hexo -g
+            node --version
+            hexo --version
         - name: Check out repository code
           uses: actions/checkout@v4
         - name: Generate & Deploy
           run: |
+            ls
             hexo generate
             hexo deploy
         - run: echo "Successfully Deployed."
