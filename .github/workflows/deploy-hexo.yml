@@ -16,9 +16,12 @@ jobs:
             node-version: '22'
         - name: Get Hexo
           run: |
-            npm install hexo
+            npm install hexo -g
+            npm install
+            hexo --version
         - name: Generate & Deploy
           run: |
+            ls
             hexo generate
             hexo deploy
         - run: echo 'Successfully Deployed.'
