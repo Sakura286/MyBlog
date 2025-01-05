@@ -103,5 +103,5 @@ theme: arknights
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:Sakura286/sakura286.github.io.git
+  repo: https://BLOG_ACCESS_TOKEN@github.com/Sakura286/sakura286.github.io.git
   branch: main

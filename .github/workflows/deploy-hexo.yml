@@ -19,12 +19,16 @@ jobs:
             npm install hexo -g
             npm install
             hexo --version
-        - name: Set Git Config
+        - name: Set Git Config & Env
+          env:
+            BLOG_ACCESS_TOKEN: ${{ secrets.BLOG_ACCESS_TOKEN }}
           run: |
             git config --global user.email "sakura286@outlook.com"
             git config --global user.name "Sakura286"
+            sed -i "s/BLOG_ACCESS_TOKEN/$BLOG_ACCESS_TOKEN/g" ./_config.yml
         - name: Generate & Deploy
           run: |
+            hexo clean
             hexo generate
             hexo deploy
         - run: echo 'Successfully Deployed.'
