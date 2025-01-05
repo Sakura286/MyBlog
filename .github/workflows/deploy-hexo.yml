@@ -8,10 +8,15 @@ jobs:
       steps:
         - name: Get Node.js
           uses: actions/setup-node@v4
+          with:
+            node-version: 'latest'
         - name: Get Hexo
+          run: npm install hexo -g
+        - name: Check Node and Hexo version
           run: |
-            npm install hexo -g
+            echo 'node version is:'
             node --version
+            echo 'hexo version is:'
             hexo --version
         - name: Check out repository code
           uses: actions/checkout@v4
@@ -20,5 +25,5 @@ jobs:
             ls
             hexo generate
             hexo deploy
-        - run: echo "Successfully Deployed."
+        - run: echo 'Successfully Deployed.'
 
