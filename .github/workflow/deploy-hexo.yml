@@ -1,0 +1,20 @@
+name: Deploy Hexo Blog
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push, pull_request]
+jobs:
+    deploy_hexo_blog:
+      name: Deploy Hexo Blog Job
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get Node.js
+          uses: actions/setup-node@v4
+        - name: Get Hexo
+          run: npm install hexo
+        - name: Check out repository code
+          uses: actions/checkout@v4
+        - name: Generate & Deploy
+          run: |
+            hexo generate
+            hexo deploy
+        - run: echo "Successfully Deployed."
+
