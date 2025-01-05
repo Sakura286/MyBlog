@@ -6,25 +6,18 @@ jobs:
       name: Deploy Hexo Blog Job
       runs-on: ubuntu-latest
       steps:
+        - name: Check out repository code
+          uses: actions/checkout@v4
+          with:
+            submodules: 'true'
         - name: Get Node.js
           uses: actions/setup-node@v4
           with:
             node-version: '22'
         - name: Get Hexo
           run: npm install hexo -g
-        - name: Check Node and Hexo version
-          run: |
-            echo 'node version is:'
-            node --version
-            echo 'hexo version is:'
-            hexo --version
-        - name: Check out repository code
-          uses: actions/checkout@v4
-          with:
-            submodules: 'true'
         - name: Generate & Deploy
           run: |
-            ls
             hexo generate
             hexo deploy
         - run: echo 'Successfully Deployed.'
