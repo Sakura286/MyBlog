@@ -1,7 +1,10 @@
 ---
-title: LibreOffice 对自定义图形的处理
+title: 'LibreOffice 对自定义图形的处理'
 date: 2024-12-20 17:02:30
-tags: LibreOffice, UI, development
+tags:
+- LibreOffice
+- UI
+- development
 ---
 
 事情的起因是修一个bug[^2]，需要折腾一下自定义图形，但几乎没有见到相关中文资料，英文资料也比较晦涩，所以想开个帖子讲得浅显易懂一点
