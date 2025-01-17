@@ -2,6 +2,8 @@
 title: 搭建 apt 仓库
 date: 2024-04-04 16:27:50
 tags:
+- repology
+- debian
 ---
 
 ## 目标
