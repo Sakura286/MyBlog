@@ -7,6 +7,10 @@ tags:
 - development
 ---
 
+
+此文尚未完成，如果想看此内容麻烦到[我的仓库](https://github.com/Sakura286/MyBlog)催我更新。
+
+
 事情的起因是修一个bug[^2]，需要折腾一下自定义图形，但几乎没有见到相关中文资料，英文资料也比较晦涩，所以想开个帖子讲得浅显易懂一点
 
 结构1：自定义图形总括
@@ -22,3 +26,4 @@ tags:
 结构4：实例
 
 [^2]: ceui https://bugs.documentfoundation.org/show_bug.cgi?id=148631
+
