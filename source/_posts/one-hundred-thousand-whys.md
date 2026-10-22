@@ -22,8 +22,8 @@ echo -e "\e[?1000;1006;1015h"
 
 ## 2. 复制 tmux 的内容时，有时会产生
 
-[^1] [How to configure the terminal so that a mouse click will move the cursor to the current mouse position - StackExchange](https://unix.stackexchange.com/questions/35021#509695)
-[^2] [how to get MouseMove and MouseClick in bash?](https://stackoverflow.com/questions/5966903)
+[^1]: [How to configure the terminal so that a mouse click will move the cursor to the current mouse position - StackExchange](https://unix.stackexchange.com/questions/35021#509695)
+[^2]: [how to get MouseMove and MouseClick in bash?](https://stackoverflow.com/questions/5966903)
 
 参考资料
 
