@@ -11,7 +11,7 @@ canvas_dust: true
 # light 亮色模式
 # -only 锁定颜色模式
 # auto 跟随系统
-color: dark
+color: auto
 
 build_time: true # 是否开启构建时间显示，开启后会在生成的站点配置中添加 build_time 字段，值为 UTC 时间字符串
 
@@ -97,6 +97,10 @@ bgm:
   autoplay: true
   loop: true
   src: /audio/bgm.mp3
+
+footnote:
+  enable: true
+  markdown: true
 
 # Vercount
 # 详见 https://vercount.one/
