@@ -1,0 +1,6 @@
+# hexo-theme-tty 主题配置，覆盖 themes/tty/_config.yml 中的同名项
+
+vercount:
+  enable: true
+
+build_time: true
