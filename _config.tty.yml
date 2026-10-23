@@ -1,5 +1,14 @@
 # hexo-theme-tty 主题配置，覆盖 themes/tty/_config.yml 中的同名项
 
+# 文章图标：从上往下第一个命中的标签或 _posts 子目录生效
+post_icon:
+  map:
+    motor: moto
+    libreoffice: shapes
+    debian: box
+    repology: box
+    linux: term
+
 vercount:
   enable: true
 
